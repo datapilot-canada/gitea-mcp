@@ -138,4 +138,4 @@ This error means the `GITEA_MCP_API_URL` environment variable is not set or is i
 
 # Prompt Samples
 ## Creating an issue
-Create a new issue in the 'datapilot-gitea-mcp' repository to track the implementation of the new feature. Add the 'enhancement' label to it.
+Create a new issue in the 'your-repository' repository to track the implementation of the new feature. Add the 'enhancement' label to it.
