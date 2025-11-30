@@ -94,7 +94,7 @@ If your Gitea instance uses a self-signed certificate, you can mount your certif
 
     ```bash
     docker run -i --rm \
-      -e GITEA_API_URL=https://your-gitea-instance.com \
+      -e GITEA_MCP_API_URL=https://your-gitea-instance.com \
       -e GITEA_ACCESS_TOKEN=your_token \
       -v /path/to/your/cert.crt:/usr/local/share/ca-certificates/custom-cert.crt \
       -e SSL_CERT_FILE=/usr/local/share/ca-certificates/custom-cert.crt \
