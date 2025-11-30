@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "gitea-local": {
+      "command": "python",
+      "args": [
+        "src/datapilot_gitea_mcp/server.py"
+      ],
+      "env": {
+        "GITEA_MCP_API_URL": "https://your-gitea-instance.com",
+        "GITEA_ACCESS_TOKEN": "your_access_token_here"
+      }
+    },
+    "gitea-docker-ssh": {
+      "command": "ssh",
+      "args": [
+        "user@your-remote-host",
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITEA_MCP_API_URL=https://your-gitea-instance.com",
+        "-e",
+        "GITEA_ACCESS_TOKEN=your_token",
+        "datapilotgiteamcp"
+      ]
+    }
+  }
+}

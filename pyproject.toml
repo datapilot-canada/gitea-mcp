@@ -1,0 +1,17 @@
+[project]
+name = "datapilotgiteamcp"
+version = "1.0.0"
+description = "MCP Server for Gitea"
+dependencies = [
+    "mcp",
+    "httpx",
+    "python-dotenv"
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/datapilot_gitea_mcp"]
