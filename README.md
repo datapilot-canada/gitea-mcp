@@ -41,8 +41,6 @@ To run manually:
 python src/datapilot_gitea_mcp/server.py
 ```
 
-See [AI_USAGE_INSTRUCTIONS.md](AI_USAGE_INSTRUCTIONS.md) for detailed instructions on how AI agents can leverage this toolkit.
-
 ## Docker Usage
 
 You can also run this server using Docker.
